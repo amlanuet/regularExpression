@@ -13,11 +13,11 @@ pattern = re.compile("^(\S+) (\S+) (\S+) \[([\w:\/]+\s[+\-]\d{4})\] \"(\S+)\s?(\
 # status_code = []
 # who = []
 
-for i, line in enumerate(open("/home/teun/Downloads/access.log")):
+for i, line in enumerate(open("access.log")):
     for match in re.finditer(pattern, line):
        # print 'Found on line %s: %s' % (i+1, match.group())
        # ip.append(match.group(1))
-       # date.append(match.group(4))
+       # date.append(match.grou:p(4))
        # methode.append(match.group(5))
        # page.append(match.group(6))
        # status_code.append(match.group(8))
